@@ -1,0 +1,6 @@
+Day    Issues    Tasks
+ 2        2        7
+ 3        2        6
+ 4        2        5
+ 5        3        8
+ 
