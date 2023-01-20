@@ -227,6 +227,7 @@ margin: 20px 5px;
 
 #up{
     color: rgb(236, 231, 231);
+    padding-top: 10px;
 }
 
 #down p{
@@ -313,3 +314,104 @@ margin: 20px 5px;
 
 
 /* mid-part */
+#main{
+    display: flex;
+    border: 1px solid teal;
+    justify-content: space-between;
+    width: 85%;
+    margin: auto;
+}
+
+#left{
+    flex: 2;
+}
+
+#mmid{
+    flex: 8;
+}
+
+
+#left>div{
+    display: flex;
+   
+    align-items: center;
+}
+
+#specialof>div{
+justify-content: space-between;
+border: 0.5px solid gray;
+flex: 1;
+height: 70px;
+}
+
+#specialof p{
+    font-size: 10px;
+    color: #414b59;
+}
+
+#specialof>div>div{
+    padding: 5px 10px;
+    text-align: center;
+    
+}
+
+#specialof img{
+    width: 70%;
+}
+
+#left>div>p{
+    color: #999999;
+    font-size: 12px;
+}
+
+#left>div>img{
+    margin: 0px 10px;
+}
+
+#left{
+    padding-top: 8px;
+}
+
+#left>div:hover{
+    cursor: pointer;
+    background-color: #525d62;
+}
+
+.blue:hover{
+    cursor: pointer;
+}
+
+#specialof>div:hover{
+
+    background-color: whitesmoke;
+}
+
+#left>p{
+    margin: 3px 15px;
+}
+
+#left>p:hover{
+    text-decoration: underline;
+}
+
+#mmid{
+    display: flex;
+}
+
+#slider{
+    height: 350px;
+    border: 1px solid green;
+    flex: 1;
+    margin: 0px 10px;
+}
+
+#sright{
+    height: 350px;
+    border: 1px solid orangered;
+    flex: 1;
+    
+}
+
+#phone{
+    display: flex;
+}
