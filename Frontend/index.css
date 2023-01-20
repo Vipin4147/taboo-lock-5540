@@ -414,4 +414,77 @@ height: 70px;
 
 #phone{
     display: flex;
+    justify-content: space-between;
+}
+
+#sbtn>button{
+ height: 12px;
+ width: 12px;
+ border-radius: 50%;
+ background-color: #999999;
+ border: 0px;
+}
+
+#sbtn{
+    padding-left: 80%;
+    margin-top: -25px;
+}
+
+#sbtn>button:nth-child(1){
+   background-color: #d23d1b;
+}
+
+#sright img{
+    width: 100%;
+}
+
+#srt>img{
+    width: 20%;
+    margin: 5px 15px;
+}
+
+#srt{
+    display: flex;
+    justify-content: space-around;
+}
+
+#phone>div{
+    flex: 1;
+   
+}
+
+#srr>img{
+    width: 90%;
+    margin-left: 10%;
+}
+
+#go{
+    height: 50%;
+    display: flex;
+}
+
+#go>input{
+    margin: auto;
+    height: 30px;
+    margin-right: 0px;
+    padding-left: 10px;
+    margin-left: 20px;
+    width: 80%;
+}
+#go>button{
+    height: 33px;
+    margin: auto;
+    margin-left: 0px;
+    background-color: #4d4d4f;
+    color: #c6c0b4;
+    border: 0px;
+}
+
+#srt span{
+    color: #525d62;
+    font-weight: 800;
+}
+
+#go>button:hover{
+    cursor: pointer;
 }
