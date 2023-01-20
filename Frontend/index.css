@@ -286,3 +286,30 @@ margin: 20px 5px;
     font-size: 20px;
     margin-bottom: 10px;
 }
+
+#download{
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+#download~div:hover{
+    cursor: pointer;
+}
+
+#subscribe >div>input{
+    width: 70%;
+    margin-right: 0px;
+}
+
+#subscribe button{
+    background-color: #d23d1b;
+    color: #c6c0b4;
+    margin-left: 0px;
+    padding: 5px;
+}
+#subscribe div{
+    display: flex;
+}
+
+
+/* mid-part */
