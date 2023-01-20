@@ -78,13 +78,13 @@ const footer=()=>{
                 <img src="https://twitter.com/industrybuying" alt="">
                 <img src="https://www.pinterest.com/industrybuy0039/" alt="">
             </div>
-            <h3>Download Our App!</h3>
+            <h3 id="download">Download Our App!</h3>
             <div>
                 <img src="https://www.industrybuying.com/static/shipafreight/images/playstore.png" alt="">
                 <img src="https://www.industrybuying.com/static/shipafreight/images/ios-app.png" alt="">
             </div>
         </div>
-        <div>
+        <div id="subscribe">
             <h3>Subscribe to Newsletter</h3>
             <div>
                 <input type="text" placeholder="Enter your email address">
