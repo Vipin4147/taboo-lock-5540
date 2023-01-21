@@ -126,3 +126,46 @@ btn6.onclick=()=>{
     btn5.style.backgroundColor="#999999";
     btn1.style.backgroundColor="#999999";
 }
+
+const get_data= async()=>{
+ 
+    try {
+    let data=await fetch("http://localhost:3000/products");
+
+    let res= await data.json();
+
+    console.log(res);
+    append_data(res);
+
+    } catch (error) {
+        console.log("err:",error);
+    }
+    
+}
+
+get_data();
+
+const append_data=(data)=>{
+
+    let cont=document.getElementById("container");
+
+    data.forEach((el)=>{
+     let div= document.createElement("div");
+     let img=document.createElement("img");
+     img.src=el.images[0];
+     let title=document.createElement("h3");
+     title.innerText=el.title;
+     let brand=document.createElement("p");
+     brand.innerText=el.brand;
+     let price=document.createElement("h2");
+     price.innerText="Rs."+el.price;
+     let btn =document.createElement("button");
+     btn.innerText="ADD TO CART";
+
+     div.append(img,title,brand,price,btn);
+     cont.append(div);
+    })
+
+}
+
+append_data();
