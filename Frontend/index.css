@@ -557,3 +557,15 @@ cursor: pointer;
 }
 
 
+#navbar{
+    position: fixed;
+    margin-top: -100px;
+}
+
+#main{
+    margin-top: 100px;
+}
+
+#navtop{
+    background-color: #efedeb;
+}
