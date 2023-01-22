@@ -127,6 +127,22 @@ btn6.onclick=()=>{
     btn1.style.backgroundColor="#999999";
 }
 
+let count=document.getElementById("count");
+
+
+const get_count=async ()=>{
+    try {
+        let res =await fetch("http://localhost:3000/cart");
+        let data=await res.json();
+        count.innerText=data.length;
+    } catch (error) {
+        console.log("err:",error);
+    }
+}
+
+get_count();
+
+
 const get_data= async()=>{
  
     try {
@@ -161,6 +177,18 @@ const append_data=(data)=>{
      price.innerText="Rs."+el.price;
      let btn =document.createElement("button");
      btn.innerText="ADD TO CART";
+     btn.onclick= async()=>{
+        let res =await fetch(`http://localhost:3000/cart`,{
+            method :"POST",
+            body: JSON.stringify(el),
+            headers:{
+                "Content-Type":"application/json"
+            }
+        })
+
+        let daat = await res.json();
+        console.log(daat)
+     }
 
      div.append(img,title,brand,price,btn);
      cont.append(div);
@@ -168,4 +196,13 @@ const append_data=(data)=>{
 
 }
 
-append_data();
+
+
+
+const cart=document.getElementById("cart")
+cart.onclick=()=>{
+    console.log("hello")
+    window.location.replace("./cart.html")
+};
+
+

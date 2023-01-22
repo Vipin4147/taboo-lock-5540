@@ -1,0 +1,342 @@
+/* navbar */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+#navtop{
+    height: 20px;
+}
+
+
+#navtop>div{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    
+    margin-right: 70px;
+}
+
+
+
+.grey{
+    color: darkgray;
+}
+.orange{
+    color: darkorange;
+}
+
+#navbot{
+    display: flex;
+    justify-content: space-between;
+    background-color: #232f3e;
+   
+    height: 70px;
+}
+#navbot>div{
+    margin-top: 10px;
+    height: 70%;
+    display: flex;
+    margin-left: 60px;
+    
+}
+#download >div> img:nth-child(2){
+    width: 15%;
+}
+#search{
+    width: 80%;
+}
+#search>input{
+    width: 80%;
+}
+
+#srhimg{
+    width: 12%;
+}
+#start>h1:nth-child(1){
+    color: white;
+}
+#start>h1:nth-child(2){
+    color: #d23d1b;
+}
+#start>h1{
+    margin-top:3px;
+}
+
+#signin{
+   
+   width: 30%
+}
+
+#signin img{
+width: 20%;
+}
+
+#signin>div{
+    color: white;
+    width: 100%;
+    margin-left: 20px;
+
+}
+
+#signin>div>p{
+    margin-top: 5px;
+}
+
+#signin>div>p:nth-child(2){
+    margin-top: 0px;
+}
+
+#track{
+   
+    width: 20%
+ }
+ 
+ #track img{
+ width: 15%;
+ }
+ 
+ #track>div{
+     color: white;
+     width: 100%;
+     margin-left: 20px;
+ 
+ }
+ 
+ #track>div>p{
+     margin-top: 5px;
+ }
+ 
+ #track>div>p:nth-child(2){
+     margin-top: 0px;
+ }
+
+ #cart{
+   
+    width: 20%
+ }
+ 
+ #cart img{
+ width: 20%;
+ }
+ 
+ #cart>div{
+     color: white;
+     width: 100%;
+     margin-left: 20px;
+ 
+ }
+ 
+ #cart>div>p{
+     margin-top: 5px;
+ }
+ 
+ #cart>div>p:nth-child(2){
+     margin-top: 0px;
+ }
+ 
+ #download{
+    flex-direction: column;
+   
+ }
+
+ #download>div:nth-child(2){
+    margin-top: 0px;
+    color: white;
+ }
+
+ /* #navbar{
+    position: fixed;
+    
+   
+} */
+#navtop{
+    background-color: #efedeb;
+}
+
+#footer>div{
+    text-align: center;
+}
+
+#footer p{
+    color: darkgray;
+    font-size: 14px;
+}
+
+#main{
+    display: flex;
+    margin: auto;
+    width: 80%;
+}
+
+#mleft{
+    flex: 7;
+    
+    border: 1px solid teal;
+}
+
+#mright{
+    flex: 3;
+    
+}
+
+#mright>div{
+    border: 0.2px solid #c7c5c5;
+    margin-bottom: 20px;
+}
+
+#paysum>div:nth-child(1){
+    display: flex;
+    padding: 5px 10px;
+    justify-content: space-between;
+    background-color:#4d4d4d;
+    color: #efedeb;
+}
+
+#paysum img{
+    width: 10%;
+}
+
+#paysum>div>div{
+    display: flex;
+    width: 80%;
+   margin: auto;
+}
+
+#paysum input{
+    width: 80%;
+}
+
+#paysum>div:nth-child(3){
+    display: flex;
+    padding: 7px;
+    border: 0.5px solid #b9b9b9;
+    align-items: center;
+}
+
+#paysum>div:nth-child(2){
+    padding: 10px;
+}
+
+#paysum>div:nth-child(2)>p{
+    margin-bottom: 20px;
+}
+#paysum>div:nth-child(2)>div{
+    margin-bottom: 20px;
+}
+
+#partof>div:nth-child(1){
+    display: flex;
+    padding: 5px 10px;
+    justify-content: space-between;
+    background-color:#4d4d4d;
+    color: #efedeb;
+}
+
+#partof img{
+    width: 10%;
+}
+
+#partof>div:nth-child(2){
+    width: 85%;
+    margin: auto;
+    padding: 10px;
+    background-color: #fffaef;
+    border: 0.3px dashed #fbdb95;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#offavl>div:nth-child(1){
+    display: flex;
+    padding: 5px 10px;
+    justify-content: space-between;
+    background-color:#4d4d4d;
+    color: #efedeb;
+}
+
+#offavl img{
+    width: 10%;
+}
+
+#offavl>div:nth-child(2){
+    display: flex;
+    width: 80%;
+   margin: auto;
+   margin-top: 15px;
+   margin-bottom: 20px;
+}
+
+#offavl input{
+    width: 80%;
+}
+
+#offavl>div:nth-child(3){
+    padding: 20px;
+}
+
+#appnow{
+    display: flex;
+    justify-content: space-between;
+}
+
+#offavl>div:nth-child(3)>p:nth-child(1){
+    background-color: green;
+    padding-left: 30px;
+}
+
+#iqp{
+    display: flex;
+}
+
+#iqp>div:nth-child(1){
+    flex: 4;
+    
+}
+
+#iqp>div:nth-child(2){
+    flex: 3;
+   
+    
+}
+
+#iqp>div:nth-child(3){
+    flex: 3;
+}
+
+#iqp>div{
+    padding-left: 20px;
+}
+
+#cont>div{
+    display: flex;
+}
+
+#cont>div>div:nth-child(1)>div{
+    display: flex;
+}
+
+#cont img{
+    width: 10%;
+}
+
+#cont>div>div:nth-child(1){
+    width: 40%;
+}
+
+#cont>div>div:nth-child(2){
+    width: 30%;
+    padding-left: 50px;
+    display: flex;
+}
+
+#cont>div>div:nth-child(2) button{
+    height: 30px;
+    width: 30px;
+}
+
+#porder{
+    display: flex;
+    padding: 15px;
+    justify-content: space-between;
+}
