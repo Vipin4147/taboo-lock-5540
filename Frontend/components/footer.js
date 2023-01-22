@@ -78,7 +78,7 @@ const footer=()=>{
                 <img src="https://twitter.com/industrybuying" alt="">
                 <img src="https://www.pinterest.com/industrybuy0039/" alt="">
             </div>
-            <h3 id="download">Download Our App!</h3>
+            <h3 id="download1">Download Our App!</h3>
             <div>
                 <img src="https://www.industrybuying.com/static/shipafreight/images/playstore.png" alt="">
                 <img src="https://www.industrybuying.com/static/shipafreight/images/ios-app.png" alt="">
