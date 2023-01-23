@@ -51,6 +51,25 @@ const append_data=(data)=>{
 
      let remove=document.createElement("button");
      remove.innerText="Remove";
+     remove.onclick=async()=>{
+        try {
+            let res = await fetch (`http://localhost:3000/cart/${el.id}` ,{
+        
+                method:'DELETE',
+                
+                headers: {
+                    'Content-Type':'application/json',
+                },
+                
+                  });
+                
+                  let data = await res.json();
+                  console.log('data:',data);
+        } catch (error) {
+            
+            console.log('err:',error);
+        }
+    }
 
 
     // div2
@@ -100,17 +119,86 @@ start.onclick=()=>{
     window.location.href="./index.html"
 }
 
+const remove_all_data =async(id)=>{
+    try {
+        let res = await fetch (`http://localhost:3000/cart/${id}` ,{
+    
+            method:'DELETE',
+            
+            headers: {
+                'Content-Type':'application/json',
+            },
+            
+              });
+            
+              let data = await res.json();
+              console.log('data:',data);
+    } catch (error) {
+        
+        console.log('err:',error);
+    }
+
+}
+
+
 let count=document.getElementById("count");
-
-
+let ccount=document.getElementById("ccount");
+let arr_id=[];
 const get_count=async ()=>{
     try {
         let res =await fetch("http://localhost:3000/cart");
         let data=await res.json();
         count.innerText=data.length;
+        ccount.innerText=data.length;
+        if(data.length>0)
+        {
+            let placeo=document.getElementById("placeo");
+            placeo.onclick=async()=>{
+            
+            
+                try {
+                    let res = await fetch (`http://localhost:3000/cart`)
+                
+                        
+                          let data = await res.json();
+                         
+                          console.log('data:',data);
+                  for(let i=0;i<data.length;i++)
+                  {
+                    arr_id.push(data[i].id);
+                  }
+            
+                } catch (error) {
+                    
+                    console.log('err:',error);
+                }
+                
+                for(let i=0;i<arr_id.length;i++)
+            {
+            remove_all_data(arr_id[i]);
+            }
+            
+            console.log(arr_id);
+            
+            
+            
+             
+                alert("Your order is placed");
+            }
+        }
+        
+
     } catch (error) {
         console.log("err:",error);
     }
 }
 
 get_count();
+
+
+let contshop=document.getElementById("contshop");
+contshop.onclick=()=>{
+    window.location.href="./index.html";
+}
+
+
